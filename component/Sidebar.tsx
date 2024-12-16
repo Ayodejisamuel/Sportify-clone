@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 
   return (
     <div className="block w-[300px] bg-black text-white p-4">
-      <div className="text-red-400">now lets go</div>
+      <div className="text-red-400">now lets</div>
       <nav>
         {routes.map((route) => (
           <a
@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
             }`}
           >
             <route.icon size={20} />
-            <span>{route.label}</span>
+            <span className="text-green-400">{route.label}</span>
           </a>
         ))}
       </nav>
